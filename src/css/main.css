@@ -1,0 +1,14 @@
+:root {
+    --valid-border-color: greenyellow; 
+    --valid-border-width: 1px; 
+    --required-border-style: solid; 
+    --error-border-color: red; 
+    --required-border-width: 2px; 
+}
+
+.PhoneNumber-valid {
+    border: var(--valid-border-width) var(--required-border-style) var(--valid-border-color);
+}
+.PhoneNumber-error {
+    border: var(--required-border-width) var(--required-border-style) var(--error-border-color);
+}
