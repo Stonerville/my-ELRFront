@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {SERVICE_ROUTES} from '../constants/Constants' 
+import {SERVICE_ROUTES} from '../../constants/Constants'
 import './Button.css'; // Tell Webpack that Button.js uses these styles
 
 export const Button = class Button extends Component {

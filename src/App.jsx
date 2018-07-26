@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 //import logo from './logo.svg';
-import Contact from './contactInfo/Contact';
+import Contact from './components/contactInfo/Contact';
 import './App.css';
 // import ReactDOM from 'react-dom';
 

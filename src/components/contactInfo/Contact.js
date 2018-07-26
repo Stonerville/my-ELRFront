@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import PhoneNumber from './PhoneNumber';
-import {ButtonUpdate} from '../Buttons/Button';
+import {ButtonUpdate} from './../buttons/Button';
+import '../../css/main.css';
+
 
 class Contact extends Component {
   constructor(props) {
@@ -27,9 +29,11 @@ class Contact extends Component {
       // const targetValue = e.target.value;
       e.preventDefault();
     }
-    componentDidMount() {
-      this.state.firstName.componentDidMount;
-   }
+  //   componentDidMount() {
+
+  //     this.setState[{firstName:'',
+  //     lastName:'' }];
+  //  }
 
  render() {
     // You can use them as regular CSS styles
