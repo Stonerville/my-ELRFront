@@ -1,34 +1,28 @@
-export const PAGELIMIT_LOCATION_LIST = '20'
-export const PAGELIMIT_LOCATION_LIST_BYMER = '20'
- 
-// let serviceHostname = ""
-// let lane = ""
-// let uiHostname = window.location.hostname;
-// let landingHostname = uiHostname.replace("apps-","");
-// if (uiHostname.indexOf('local') >= 0){
-//   serviceHostname = "das-dvnt.test.statefarm.com"
-//   lane = "b"
-//   landingHostname = "dvnt-b.test.statefarm.com"
-// }
-// else if (uiHostname.indexOf('dvnt-b') > 0){
-//   serviceHostname = uiHostname.replace('apps-dvnt-b','das-dvnt')
-//   lane = "b"
-// }
-// else if (uiHostname.indexOf('dvnt-a') > 0){
-//   serviceHostname = uiHostname.replace('apps-dvnt-a','das-dvnt')
-//   lane = "a"
-// }
-// else{
-//   serviceHostname = uiHostname.replace('apps','das')
-//   let hostnameLane = uiHostname.split('.test.')[0];
-//   lane = hostnameLane.charAt(hostnameLane.length-1)
-// }
-// export const SERVICE_CONTEXT = "https://" + serviceHostname + "/boaMerchantPortal/api/v1"
-//export const API_LANE = lane
-export const API_KEY = "2a09a063-43d9-4458-bc1e-8d46f67d1fda"
-export const THREE_CHAR_LENGTH_MSG = 'Enter more than 3 characters'
- 
-export const SERVICE_ROUTES = {
-    UPLOAD_LOGO: "/logo",
-    MPA_STATUS: "/mpaStatus",
+export const INPUT_VALID_CLASS = 'input-valid';
+export const INPUT_ERROR_CLASS = 'input-error';
+
+export const CLASS_VALID_INPUT = { valid: INPUT_VALID_CLASS, error: INPUT_ERROR_CLASS};
+export const DEFAULT_INPUT_FIRSTNAME = {id: 'firstName', label:  'First Name', isRequired: false};
+export const DEFAULT_INPUT_LASTNAME = {id: 'lastName', label:  'Last Name', isRequired: true};
+export const DEFAULT_INPUT_MIDDLENAME = {id: 'middleName', label:  'Middle Name', isRequired: false};
+export const DEFAULT_INPUT_PHONE = {id: 'phone', label:  'Phone', isRequired: true};
+
+/* ----------------------------------
+    SetUp Input 
+   ---------------------------------- */
+
+export const setClassName = (isRequired) => {
+    return (isRequired) ? CLASS_VALID_INPUT.valid : CLASS_VALID_INPUT.error;
 }
+
+export const setDefaultInput = (id, label, isRequired) => {
+     return {
+        id: id,
+        label: label,
+        value: '',
+        isRequired: isRequired,
+        invalidMessage: [],
+        isValid: !isRequired,
+        className: setClassName(isRequired)
+    }
+ }

@@ -16,7 +16,7 @@ export const ButtonUpdate =  class ButtonUpdate extends Component {
   render() {
      return (
         <div>
-           <button className="btn btn-danger" onClick = {this.props.updateStateProp}>{this.props.title}</button>
+           <button className="btn btn-danger" onClick = {this.props.updateStateProp} value={this.props.title}>{this.props.title}</button>
         </div>
      );
   }

@@ -6,9 +6,9 @@
     --required-border-width: 2px; 
 }
 
-.PhoneNumber-valid {
+.input-valid {
     border: var(--valid-border-width) var(--required-border-style) var(--valid-border-color);
 }
-.PhoneNumber-error {
+.input-error {
     border: var(--required-border-width) var(--required-border-style) var(--error-border-color);
 }

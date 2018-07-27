@@ -1,8 +1,18 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import {render} from 'react-dom';
 import './index.css';
-import App from './App.jsx';
+import { Provider } from 'react-redux'
 import registerServiceWorker from './registerServiceWorker';
+import App from './App.jsx';
+import {store} from './store/store'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+store.subscribe(() => {console.log('Store Updated')});
+
+let rootElement = document.getElementById('root');
+
+render(
+    <Provider store = {store}>
+        <App />
+    </Provider>,  
+    rootElement);
 registerServiceWorker();

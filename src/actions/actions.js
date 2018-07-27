@@ -1,0 +1,6 @@
+export const UPDATE_TODO = 'UPDATE_TODO'
+export const SET_INPUT = 'SET_INPUT'
+export const SET_FIRSTNAME = 'SET_FIRSTNAME'
+export const SET_LASTNAME = 'SET_LASTNAME'
+export const SET_PHONE = 'SET_PHONE'
+export const SET_FULLNAME = 'SET_FULLNAME'
